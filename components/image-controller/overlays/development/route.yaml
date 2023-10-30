@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: image-controller
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: image-controller
+    app.kubernetes.io/part-of: image-controller
+  name: image-controller3btq
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: image-controller
+    weight: 100
+status: {}

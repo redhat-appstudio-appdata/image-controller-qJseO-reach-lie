@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: image-controller
     app.kubernetes.io/part-of: image-controller
-  name: image-controller3btq
+  name: image-controllervdti
 spec:
   port:
     targetPort: 8080

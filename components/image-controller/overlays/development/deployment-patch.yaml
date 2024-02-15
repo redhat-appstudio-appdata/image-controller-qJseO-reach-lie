@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: image-controller
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
@@ -11,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtap-build-tenant/image-controller/image-controller@sha256:09d78a9559621949be46ddc0107a9d00c831bf17fe12761bd30b5eaaa8fabea7
+      - image: quay.io/redhat-user-workloads/rhtap-build-tenant/image-controller/image-controller@sha256:418059c2553ae872bc5541cf6a37210fe49dee19d071eb3a988bc30e913c26f8
         name: container-image
         resources: {}
 status: {}
